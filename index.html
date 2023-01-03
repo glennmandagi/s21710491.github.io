@@ -10,11 +10,11 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
             h1{
-                font-family: Arial;
+                font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
             }
             p{
-                font-family: Arial;
+                font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
                 font-size: 20px;
                 margin-top: 0px;
@@ -44,7 +44,7 @@
                 display: none;
             }
             .footer{
-                font-family: Arial;
+                font-family: Arial, Helvetica, sans-serif;
                 position: fixed;
                 left: 0;
                 bottom: 0;
@@ -53,25 +53,40 @@
                 color: #000000;
                 text-align: center;
             }
+            form{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         <div class="topnav" id="myTopnav">
             <a class="active" href="index.html">Home</a>
             <a href="biodata.html">Biodata</a>
+            <a href="kontak_media_sosial.html">Kontak dan Media Sosial</a>
         </div>
         <div class="container">
             <div class="jumbotron">
                 <h1>Jitro Glenn Wilhelm Calveen Mandagi</h1>
                 <p>Selamat datang di Halaman Github.io Saya</p>
             </div>
-            <div id="contact">
-                <center><p>Media Sosial</p></center>
-                <center><a href="https://facebook.com/s21710491"><img src="../s21710491.github.io/img/Facebook.ico" width="30" height="30"><a href="https://Twitter.com/jitromandagi16"><img src="../s21710491.github.io/img/Twitter.ico" width="30" height="30"></a></center>
-            </div>
         </div>
+
         <footer>
             <p>© 2021-2023 Jitro Glenn Wilhelm Calveen Mandagi. Hak cipta dilindungi</p>
         </footer>
+
+        <form action="mailto:s21710491@student.unklab.ac.id"
+        method="post" enctype="multipart/form-data"
+        name="EmailForm">
+            Nama:<br>
+            <input type="text" size="19" name="Contact-Name"><br><br>
+            Email:<br>
+            <input type="email" size="19" name="Contact-Email"><br><br>
+            Pesan:<br>
+            <textarea name="Contact-Message" rows="6" cols="20">
+            </textarea><br><br>
+            <button type="submit" value="Submit">Kirim</button>
+        </form>
     </body>
 </html>
